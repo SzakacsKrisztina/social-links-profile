@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: hsl(0 0 8);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: hsl(0 0 12);
+}
+
+.card__avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    /* if picture is not square, it wont allow disortion */
+    border-radius: 50%;
+
+}
+
+.card__name {
+    font-weight: 600;
+    color: hsl(0 0 100);
+    font-family: inter;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card__location {
+    margin-top: 0px;
+    color: hsl(75 94 57);
+    font-weight: 600;
+    font-family: inter;
+    font-size: 14px;
+    text-align: center;
+}
+
+.card__bio {
+    color: hsl(0 0 100);
+    font-weight: 400;
+    font-family: inter;
+    font-size: 14px;
+}
+
+/* ul-s settings padding 0*/
+.card__links {
+    margin-top: 20px;
+    padding: 0px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* li's settings margin to separate buttons */
+
+.card__items {
+    margin-bottom: 15px;
+    text-align: center;
+    list-style: none;
+
+}
+
+/* buttons layout */
+.card__button {
+    display: block;
+    width: 100%;
+    background-color: hsl(0 0 20);
+    color: hsl(0 0 100);
+    font-weight: 600;
+    font-family: inter;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.card__button:hover {
+    background-color: hsl(75 94 57);
+    color: hsl(0 0 12);
+    font-weight: 600;
+}

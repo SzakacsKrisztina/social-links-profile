@@ -85,7 +85,8 @@ body {
     padding-bottom: 12px;
 }
 
-.card__button:hover {
+.card__button:hover,
+.card__button:focus-visible {
     background-color: hsl(75 94 57);
     color: hsl(0 0 12);
     font-weight: 600;
